@@ -136,3 +136,15 @@ section em {
     font-size: 24px;
 
 }
+
+@media screen and (max-width: 880px){
+
+    .qualite-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .qualite-container > div {
+        width: 100%;
+    }
+}
