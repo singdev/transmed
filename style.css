@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+.round-button, .light-round-button {
+    border: 2px solid #e9120e;
+    padding: 12px 32px;
+    color: white;
+    border-radius: 20px;
+    background-color: #e9120e;
+    font-weight: bold;
+}
+
+.light-round-button {
+    background-color: transparent;
+    color: #e9120e;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+section h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #777777;
+    padding: 80px 20px;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+section strong {
+    color: #e9120e;
+    opacity: 0.8;
+}
+
+section em {
+    font-style: normal;
+    color: #1045ee;
+}
+
+.presentation-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation-content img {
+    width: 25%;
+    height: auto;
+}
+
+.presentation-content ul {
+    width: 50%;
+    font-weight: 500;
+    font-weight: 16px;
+    line-height: 1.5em;
+}
+
+.presentation-content ul li {
+    padding: 16px;
+}
+
+.qualite-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.qualite-container img {
+    height: auto;
+    width: 25%;
+}
+
+.qualite-container {
+    background: url(./img/vehicules);
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-size: 100%;
+}
+
+.qualite-container > div {
+    background-color: #1045eeaa;
+    padding: 16px;
+    color: white;
+    width: 33.3%;
+}
+
+.vision-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.qualite-container h2 {
+    margin-top: 40px;
+    font-size: 24px;
+    padding-bottom: 16px;
+}
+
+.qualite-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.qualite-item i {
+    padding-right: 16px;
+    font-size: 24px;
+}
+
+.qualite-item ul {
+    padding-left: 20px;
+}
+
+.qualite-item li {
+    padding-bottom: 16px;
+}
+
+.qualite-item strong {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+
+}

@@ -1,0 +1,40 @@
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.logo-transmed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-transmed .logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.trans, .med {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.trans {
+    color: #e9120e;
+}
+
+.med {
+    color: #1045ee;
+    border-left: 1px solid #1045ee;
+    padding-left: 8px;
+    margin-left: 8px;
+}
+
+.logo-text p {
+    text-transform: uppercase;
+    color: dodgerblue;
+}
