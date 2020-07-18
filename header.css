@@ -126,7 +126,46 @@ nav {
     margin-top: 8px;
 }
 
+.humberger {
+    display: none;
+}
+
 @media screen and (max-width: 880px){
+
+    .nav-item {
+        width: 100%;
+        background-color: #e9120e;
+        margin: 0px;
+    }
+
+    .nav-bar {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .show-nav {
+        display: flex;
+    }
+
+    .socials {
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .socials a {
+        display: none;
+    }
+
+    .socials .humberger {
+        display: block;
+    }
 
     .contact-bar .adresse-transmed, .contact-bar .contact-transmed {
         display: none;
@@ -138,5 +177,9 @@ nav {
 
     .main-header-content .content-text {
         width: 100%;
+    }
+
+    button {
+        margin-bottom: 16px;
     }
 }

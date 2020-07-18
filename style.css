@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
+    transition: 0.4s;
 }
 
 .round-button, .light-round-button {
@@ -146,5 +147,17 @@ section em {
 
     .qualite-container > div {
         width: 100%;
+    }
+
+    .presentation-content {
+        flex-direction: column-reverse;
+    }
+
+    .presentation-content ul {
+        width: 90%;
+    }
+
+    .presentation-content img {
+        width: 90%;
     }
 }
