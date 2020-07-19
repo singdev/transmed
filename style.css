@@ -254,14 +254,22 @@ video {
 }
 
 #map {
-    width: 400px;
+    width: 300px;
     height: 300px;
+    margin-bottom: 8px;
 }
 
 .contact-ctn {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.map-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .info-contact {
