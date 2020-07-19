@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="logo.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@400;900&family=Roboto:wght@500&display=swap"
-        rel="stylesheet">
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="header.css">
-    <title>Transmed | Ambulances & Urgences - </title>
+    <title>Transmed | Ambulances & Urgences </title>
 </head>
 
 <body>
@@ -40,14 +41,14 @@
     </div>
     <nav>
         <div class="nav-bar">
-            <a href="#" class="nav-item">Présentation</a>
-            <a href="#" class="nav-item">Politique qualité</a>
-            <a href="#" class="nav-item">Prestations</a>
-            <a href="#" class="nav-item">Contacts</a>
+            <a href="#presentation" class="nav-item">Présentation</a>
+            <a href="#qualite" class="nav-item">Politique qualité</a>
+            <a href="#prestation" class="nav-item">Prestations</a>
+            <a href="#contact" class="nav-item">Contacts</a>
         </div>
 
         <div class="socials">
-            <a href="#" class="humberger" onclick="toggleNavMenu()"><i class="fa fa-bars"></i></a>
+            <button class="humberger" onclick="toggleNavMenu()"><i class="fa fa-bars"></i></button>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-whatsapp"></i></a>
@@ -63,13 +64,13 @@
                     <h2>Bienvenue chez Transmed</h2>
                     <span class="separator"></span>
                     <h1>La qualité des soins dans le confort de chez soi</h1>
-                    <h3>Grâce à transmed Gabon vous avez accès aux <strong>consultations</strong> , <strong>soins
+                    <h3>Grâce à transmed vous avez accès aux <strong>consultations</strong> , <strong>soins
                             infirmiers</strong> et <strong>hospitalisations</strong> à domicile. Nous offrons égalements
                         des services d' Ambulance, Taxi ambulance et Evenementiel pour les structures sanitaire</h3>
 
                     <div class="actions">
-                        <button class="light-round-button">A propos de nous</button>
-                        <button class="round-button">Nous contactez</button>
+                        <a href="#presentation" class="light-round-button">A propos de nous</a>
+                        <a href="#contact" class="round-button">Nous contactez</a>
                     </div>
                 </div>
             </div>
@@ -80,11 +81,11 @@
     <main>
 
         <section>
-            <h1>Présentation de <strong>Transmed</strong> Gabon</h1>
+            <h1 id="presentation">Présentation de <strong>Transmed</strong></h1>
             <div class="presentation-content">
                 <ul>
                     <li><strong>TRANSMED</strong> est la première structure médicale d’urgence qui assure une
-                        permanence de soins <em>24H/24</em>  et <em>7J/7</em> à travers principalement la visite
+                        permanence de soins <em>24H/24</em> et <em>7J/7</em> à travers principalement la visite
                         à domicile, ambulance, véhicule sanitaires légers (VSL) et taxi
                         conventionné.</li>
                     <li>C’est une société par action simplifiées (SAS) d’un capital de 1 000 000
@@ -97,12 +98,12 @@
 
             <video width="90%" height="400" controls>
                 <source src="./videos/presentation.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
+                Your browser does not support the video tag.
+            </video>
         </section>
 
         <section>
-            <h1>Politique <strong>qualité</strong></h1>
+            <h1 id="qualite">Politique <strong>qualité</strong></h1>
 
             <div class="qualite-container">
                 <div class="vision-ctn">
@@ -141,54 +142,189 @@
         </section>
 
         <section>
-            <h1>Prestations</h1>
+            <h1 id="prestation">Prestations</h1>
 
             <div class="prestation-ctn">
+
                 <div class="prestation">
-                    <i class="fas fa-gem"></i>
+                    <i class="fas fa-home"></i>
                     <p>Visite médicale à domicile</p>
                 </div>
 
                 <div class="prestation">
-                    <i class="fas fa-gem"></i>
-                    <p>Visite médicale à domicile</p>
-                </div>
-
-                <div class="prestation">
-                    <i class="fas fa-gem"></i>
+                    <i class="fas fa-procedures"></i>
                     <p>Transport d’urgence pré-hospitalière</p>
                 </div>
 
                 <div class="prestation">
-                    <i class="fas fa-gem"></i>
+                    <i class="far fa-hospital"></i>
                     <p>Transfert inter-hospitalier</p>
                 </div>
 
                 <div class="prestation">
-                    <i class="fas fa-gem"></i>
+                    <i class="fas fa-stethoscope"></i>
                     <p>Rapatriement sanitaire</p>
                 </div>
 
                 <div class="prestation">
-                    <i class="fas fa-gem"></i>
-                    <p>Transport pour soins ponctuels, discontinus ou continus (chimiothérapie, radiothérapie, dialyse, kinésithérapie)</p>
+                    <i class="fas fa-ambulance"></i>
+                    <p>Transport pour soins ponctuels, discontinus ou continus (chimiothérapie, radiothérapie, dialyse,
+                        kinésithérapie)</p>
                 </div>
 
                 <div class="prestation">
-                    <i class="fas fa-gem"></i>
+                    <i class="fas fa-calendar-week"></i>
                     <p>Evènementiel</p>
+                </div>
+            </div>
+
+            <h1><strong>Nos Offres</strong></h1>
+
+            <div class="offres">
+                <div class="offre"
+                    style="background: url(./img/happy-doctor.jpeg); background-repeat: no-repeat; background-size: cover;">
+                    <div class="content">
+                        <h2>Offre 1</h2>
+                        <h3>Visite médical à domicile</h3>
+
+                        <p>Nous avons des médecins libéraux expérimentés dans lde nombreux domaines:</p>
+                        <ul>
+                            <li>Médecine générale</li>
+                            <li>Pédiatrie - ORL</li>
+                            <li>Cardiologie - Pneumologie</li>
+                            <li>Neurologie - Traumatologie</li>
+                        </ul>
+
+                        <p>Les médecins disposent de plusieurs
+                            véhicules, avec des chauffeurs formés aux
+                            gestes d’urgence. Chaque véhicule est équipé.</p>
+
+                        <ul class="kit">
+                            <li>
+                                <i class="fas fa-briefcase-medical"></i>
+                                <span>Sac de consultation </span>
+                            </li>
+
+                            <li>
+                                <i class="fas fa-briefcase-medical"></i>
+                                <span>Sac d’urgence</span>
+                            </li>
+
+                            <li>
+                                <i class="fas fa-prescription-bottle-alt"></i>
+                                <span>Kit de médicaments per os</span>
+                            </li>
+
+                            <li>
+                                <i class="fas fa-heartbeat"></i>
+                                <span>Electrocardiogramme</span>
+                            </li>
+
+                            <li>
+                                <i class="fas fa-heartbeat"></i>
+                                <span>Défibrillateur semi-automatique (DSA)</span>
+                            </li>
+
+                            <li>
+                                <i class="fas fa-lungs"></i>
+                                <span>Obus d’oxygène</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="offre"
+                    style="background: url(./img/vehicules); background-repeat: no-repeat; background-size: cover;">
+                    <div class="content">
+                        <h2>Offre 2</h2>
+                        <h3>Transport médicalisé de soins intensifs</h3>
+
+                        <p>Une cellule médicalisée est composée de notre équipe de médecins et d’infirmiers qualifiés
+                            pour accompagner les patients d’urgences, soins intensifs et réanimation</p>
+                        <p>Avec un matériel de pointe adapté au transfert de patient présentant un risque vital</p>
+                    </div>
+                </div>
+
+                <div class="offre"
+                    style="background: url(./img/vehicules); background-repeat: no-repeat; background-size: cover;">
+                    <div class="content">
+                        <h2>Offre 3</h2>
+                        <h3>Transport médicalisé de soins standards</h3>
+
+                        <p>Cette offre permet le transfert non urgent de personne nécessitant un brancard </p>
+                        <p>Toujours accompagné d’un infirmier, si possible d’un médecin</p>
+                        <p>Ceci permet donc d’avoir une surveillance permanente et ainsi assurer la sécurité du </p>
+                        <p>La présence de l’infirmier favorise un échange et le contrôle de l’état du patient </p>
+                        <p>Le véhicule possède aussi l’équipement nécessaire pour le trajet( oxygène, matelas à
+                            dépression, pneumatique, trousse de secours)</p>
+                    </div>
+                </div>
+
+                <div class="offre"
+                    style="background: url(./img/vehicules); background-repeat: no-repeat; background-size: cover;">
+                    <div class="content">
+                        <h2>Offre 4</h2>
+                        <h3>Taxi ou VSL Conventionné</h3>
+
+                        <p>Transporte les usagers en position assise </p>
+                        <p> Fait l’objet d’un accompagnement administratif et médical </p>
+                        <p> Equipé pour faciliter l’accès en chaise roulante </p>
+                        <p>Détient le nécessaire en tout secourisme</p>
+
+                    </div>
+                </div>
+
+                <div class="offre"
+                    style="background: url(./img/bureau); background-repeat: no-repeat; background-size: cover;">
+                    <div class="content">
+                        <h2>Offre 5</h2>
+                        <h3>offre personnalisée</h3>
+
+                        <p>Prise de RDV chez des medecins spécialistes
+                        <p>Suivi du dossier médical</p>
+                        <p>Les véhicules et le personnel peuvent être loués pour des évènements spéciaux</p>
+                        <p>Transport de poche de sang</p>
+                        <p>Des évacuations d’urgences programmés à l’intérieur du pays</p>
+                    </div>
                 </div>
             </div>
 
         </section>
 
         <section>
-            <h1>Nous contacter</h1>
+            <h1 id="contact">Nous contacter</h1>
+
+            <div class="contact-ctn">
+                <div class="map-content">
+                    <div id='map'></div>
+                    <div class="adresse-contact">
+                        <p class="adresse">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Boulevard de la Nation, Entrée de la Maringá, Louis</span>
+                        </p>
+                        <p class="bp">4088 Libreville - Gabon</p>
+                    </div>
+                </div>
+                <div class="info-contact">
+                    <h2>Appelez nous</h2>
+                    <p class="tel">+241 11 73 40 60 | +241 77 701 272 | +241 60 108 844</p>
+
+
+                    <h2>Envoyez nous un email</h2>
+                    <p><a href="mailto:enzombira@gmail.com">enzombira@gmail.com</a></p>
+
+                    <h2>Suivez nous sur les réseaux sociaux</h2>
+                    <div class="contact-socials">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-
+        <p>&copy; Transmed - 2020</p>
     </footer>
 
     <script src="./script.js"></script>
