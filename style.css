@@ -159,6 +159,7 @@ video {
 
     .presentation-content ul {
         width: 90%;
+        list-style-type: none;
     }
 
     .presentation-content img {
