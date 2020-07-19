@@ -112,9 +112,12 @@ nav {
 
 .actions {
     padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.actions button {
+.actions a {
     margin-right: 16px;
 }
 
@@ -128,6 +131,12 @@ nav {
 
 .humberger {
     display: none;
+}
+
+
+.round-button, .light-round-button  {
+    width: 40%;
+    text-align: center;
 }
 
 @media screen and (max-width: 880px){

@@ -11,15 +11,21 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .round-button, .light-round-button {
-    border: 2px solid #e9120e;
-    padding: 12px 32px;
+    border: 1px solid #e9120e;
+    padding: 8px 16px;
+    font-size: 14px;
     margin: 4px;
     color: white;
     border-radius: 20px;
     background-color: #e9120e;
     font-weight: bold;
     display: inline-block;
+    text-decoration: none;
 }
 
 .light-round-button {
@@ -62,7 +68,7 @@ video {
 .presentation-content {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -76,15 +82,13 @@ video {
     font-weight: 500;
     font-weight: 16px;
     line-height: 1.5em;
+    padding: 32px 0px;
+    list-style-type: none;
 }
 
 .presentation-content ul li {
     padding: 16px;
-}
-
-.qualite-container {
-    display: flex;
-    flex-direction: row;
+    text-align: justify;
 }
 
 .qualite-container img {
@@ -99,6 +103,9 @@ video {
     background-size: contain;
     background-position: center;
     background-size: 100%;
+    display: flex;
+    padding: 20;
+    width: 99.9%;
 }
 
 .qualite-container>div {
@@ -146,6 +153,7 @@ video {
 
 .qualite-item ul {
     padding-left: 20px;
+    list-style-type: none;
 }
 
 .qualite-item li {
@@ -155,7 +163,7 @@ video {
 .qualite-item strong {
     color: #1045ee;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 video {
@@ -198,6 +206,10 @@ video {
     font-weight: 600;
     text-align: center;
     padding: 8px;
+}
+
+.prestation a {
+    font-weight: 400;
 }
 
 .offre {
@@ -301,8 +313,51 @@ video {
 }
 
 .contact-socials i {
-    font-size: 2em;
+    font-size: 3em;
     padding: 16px;
+    color: #e9120e;
+}
+
+.equipes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.user i {
+    font-size: 2em;
+    color: #1045ee;
+}
+
+.user p {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #444444;
+}
+
+.named-user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 90%;
+    padding: 20px;
+}
+
+.named {
+    padding: 20px;
+}
+
+.named-user h3 {
     color: #e9120e;
 }
 
@@ -364,6 +419,14 @@ main {
 
     .offre .kit {
         grid-template-columns: auto auto;
+    }
+
+    .named-user {
+        flex-direction: column;
+    }
+
+    .equipes {
+        grid-template-columns: auto;
     }
 }
 

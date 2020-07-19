@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Grâce à transmed vous avez accès aux consultations , soins infirmiers et hospitalisations à domicile. Nous offrons égalements des services d' Ambulance, Taxi ambulance et Evenementiel pour les structures sanitaire">
+    <meta name="description"
+        content="Grâce à transmed vous avez accès aux consultations , soins infirmiers et hospitalisations à domicile. Nous offrons égalements des services d' Ambulance, Taxi ambulance et Evenementiel pour les structures sanitaire">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="logo.css">
     <link rel="apple-touch-icon" sizes="57x57" href="img/icon/apple-icon-57x57.png">
@@ -57,6 +58,7 @@
             <a href="#presentation" class="nav-item">Présentation</a>
             <a href="#qualite" class="nav-item">Politique qualité</a>
             <a href="#prestation" class="nav-item">Prestations</a>
+            <a href="#equipe" class="nav-item">Equipe</a>
             <a href="#contact" class="nav-item">Contacts</a>
         </div>
 
@@ -78,13 +80,11 @@
                     <h1 class="animate__animated animate__bounce animate__backOutUp animate__fadeInDown">La qualité des
                         soins dans le confort de chez soi</h1>
                     <h3 class="animate__animated animate__fadeIn">Grâce à transmed vous avez accès aux
-                        <strong>consultations</strong> , <strong>soins
-                            infirmiers</strong> et <strong>hospitalisations</strong> à domicile. Nous offrons égalements
-                        des services d' Ambulance, Taxi ambulance et Evenementiel pour les structures sanitaires.</h3>
+                        <strong>activités médicales</strong> à domicile.</h3>
 
                     <div class="actions">
                         <a href="#presentation" class="light-round-button">A propos de nous</a>
-                        <a href="#contact" class="round-button">Nous contactez</a>
+                        <a href="#contact" class="round-button">Contactez nous</a>
                     </div>
                 </div>
             </div>
@@ -97,10 +97,12 @@
             <h1 id="presentation">Présentation de <strong>Transmed</strong></h1>
             <div class="presentation-content">
                 <ul data-aos="fade-right">
-                    <li><strong>TRANSMED</strong> est la première structure médicale d’urgence qui assure une
-                        permanence de soins <em>24H/24</em> et <em>7J/7</em> à travers principalement la visite
-                        à domicile, ambulance, véhicule sanitaires légers (VSL) et taxi
-                        conventionné.</li>
+                    <li><strong>TRANSMED</strong> est la première structure privée pour les prestations de
+                        services dans tous les domaines de la santé à domicile, il assure une
+                        permanence de soins <em>24H/24</em> et <em>7J/7</em> à travers principalement la Visite
+                        médicale à domicile, Consultations à domicile, Soins Infirmiers à
+                        domicile, Hospitalisation à domicile, Ambulance, Véhicule Sanitaires
+                        Légers (VSL) et Evénementiel.</li>
                     <li>C’est une société par action simplifiées (SAS) d’un capital de 1 000 000
                         FCFA basé à Libreville.</li>
                     <li>La création de TRANSMED est inspirée par un accident vasculaire
@@ -167,45 +169,56 @@
                 <div data-aos="zoom-in-up" class="prestation">
                     <i class="fas fa-home"></i>
                     <p>Visite médicale à domicile</p>
-                </div>
-
-                <div data-aos="zoom-in-up" class="prestation">
-                    <i class="fas fa-procedures"></i>
-                    <p>Transport d’urgence pré-hospitalière</p>
-                </div>
-
-                <div data-aos="zoom-in-up" class="prestation">
-                    <i class="far fa-hospital"></i>
-                    <p>Transfert inter-hospitalier</p>
+                    <a href="#offre1">Consulter l'offre</a>
                 </div>
 
                 <div data-aos="zoom-in-up" class="prestation">
                     <i class="fas fa-stethoscope"></i>
-                    <p>Rapatriement sanitaire</p>
+                    <p>Consultations à domicile</p>
+                    <a href="#offre2">Consulter l'offre</a>
+                </div>
+
+                <div data-aos="zoom-in-up" class="prestation">
+                    <i class="fas fa-user-nurse"></i>
+                    <p>Soins Infirmiers à domicile</p>
+                    <a href="#offre3">Consulter l'offre</a>
+                </div>
+
+                <div data-aos="zoom-in-up" class="prestation">
+                    <i class="fas fa-procedures"></i>
+                    <p>Hospitalisation à domicile</p>
+                    <a href="#offre4">Consulter l'offre</a>
                 </div>
 
                 <div data-aos="zoom-in-up" class="prestation">
                     <i class="fas fa-ambulance"></i>
-                    <p>Transport pour soins ponctuels, discontinus ou continus (chimiothérapie, radiothérapie, dialyse,
-                        kinésithérapie)</p>
+                    <p>Ambulance</p>
+                    <a href="#offre5">Consulter l'offre</a>
+                </div>
+
+                <div data-aos="zoom-in-up" class="prestation">
+                    <i class="fas fa-car-side"></i>
+                    <p>Véhicule Sanitaires Légers (VSL)</p>
+                    <a href="#offre6">Consulter l'offre</a>
                 </div>
 
                 <div data-aos="zoom-in-up" class="prestation">
                     <i class="fas fa-calendar-week"></i>
                     <p>Evènementiel</p>
+                    <a href="#offre7">Consulter l'offre</a>
                 </div>
             </div>
 
             <h1><strong>Nos Offres</strong></h1>
 
             <div class="offres">
-                <div data-aos="flip-right" class="offre"
+                <div id="offre1" data-aos="flip-right" class="offre"
                     style="background: url(./img/happy-doctor.jpeg); background-repeat: no-repeat; background-size: cover;">
                     <div class="content">
                         <h2>Offre 1</h2>
-                        <h3>Visite médical à domicile</h3>
+                        <h3>Visite médicale à domicile</h3>
 
-                        <p>Nous avons des médecins libéraux expérimentés dans lde nombreux domaines:</p>
+                        <p>Nous avons des médecins libéraux expérimentés dans denombreux domaines:</p>
                         <ul>
                             <li>Médecine générale</li>
                             <li>Pédiatrie - ORL</li>
@@ -251,62 +264,207 @@
                     </div>
                 </div>
 
-                <div data-aos="flip-right" class="offre"
-                    style="background: url(./img/vehicules); background-repeat: no-repeat; background-size: cover;">
+                <div id="offre2" data-aos="flip-right" class="offre"
+                    style="background: url(./img/black-doctor.jpeg); background-repeat: no-repeat; background-size: cover;">
                     <div class="content">
                         <h2>Offre 2</h2>
-                        <h3>Transport médicalisé de soins intensifs</h3>
+                        <h3>Consultations à domicile </h3>
 
-                        <p>Une cellule médicalisée est composée de notre équipe de médecins et d’infirmiers qualifiés
-                            pour accompagner les patients d’urgences, soins intensifs et réanimation</p>
-                        <p>Avec un matériel de pointe adapté au transfert de patient présentant un risque vital</p>
+                        <p>Les consultations médicales à domicile sont assurées par nos équipes de médecins pour toutes
+                            les personnes ne pouvant pas se déplacer, dans une structure de soins publique ou chez un
+                            médecin du secteur privé, du fait de
+                            leur état de santé ou de l’indisponibilité de moyens de transport. Ce service a déjà fait
+                            ses preuves dans beaucoup de pays du monde depuis des décennies.</p>
+
+                        <p>Ce service est également utile pour assurer la permanence de soins, en complémentarité avec
+                            les structures de soins publiques et privées. En effet, nos médecins sont disponibles 24H/24
+                            et
+                            7J/7 en cas de difficultés à trouver rapidement un médecin (par exemple la nuit ou durant le
+                            weekend et les jours fériés).</p>
+
+                        <p>Ce service est évidemment disponible pour toute personne souhaitant être soignée et rassurée
+                            dans le confort de son domicile.</p>
+
+                        <p>Nous n’intervenons pas en cas d’urgence vitale. Cependant, comme cela peut se produire chez
+                            votre médecin traitant, si l’urgence vitale est constatée une fois sur place, nos médecins
+                            ont le rôle de vous orienter vers une structure d’urgence spécialisée.</p>
                     </div>
                 </div>
 
-                <div data-aos="flip-right" class="offre"
-                    style="background: url(./img/vehicules); background-repeat: no-repeat; background-size: cover;">
+                <div id="offre3" data-aos="flip-right" class="offre"
+                    style="background: url(./img/black-doctor.jpeg); background-repeat: no-repeat; background-size: cover;">
                     <div class="content">
                         <h2>Offre 3</h2>
-                        <h3>Transport médicalisé de soins standards</h3>
+                        <h3>Soins Infirmiers à domicile</h3>
 
-                        <p>Cette offre permet le transfert non urgent de personne nécessitant un brancard </p>
-                        <p>Toujours accompagné d’un infirmier, si possible d’un médecin</p>
-                        <p>Ceci permet donc d’avoir une surveillance permanente et ainsi assurer la sécurité du </p>
-                        <p>La présence de l’infirmier favorise un échange et le contrôle de l’état du patient </p>
-                        <p>Le véhicule possède aussi l’équipement nécessaire pour le trajet( oxygène, matelas à
-                            dépression, pneumatique, trousse de secours)</p>
+                        <p>Les soins infirmiers à domicile sont des actes
+                            paramédicaux qui peuvent être prodigués à tous, mais ont
+                            un intérêt tout particulier pour les personnes à mobilité
+                            réduite (personnes avec des maladies chroniques,
+                            personnes âgées, grabataires, …)</p>
+
+                        <p>Les soins infirmiers à domicile permettent également de
+                            prendre le relais d’une intervention ou d’une
+                            hospitalisation, tout en favorisant un retour plus rapide à
+                            domicile des patients</p>
+
+                        <p>Quelques exemples de soins à domicile que nous
+                            assurons : glycémie, courbes tensionnelles, prélèvements
+                            sanguins, injections sous cutanées et intramusculaires,
+                            perfusions, pansements (post opératoire, d’escarres,
+                            chirurgical, de brûlure… , ablation de fils ou d'agrafes,
+                            séances d'aérosol, sondes urinaires, lavements
+                            évacuateurs …)</p>
                     </div>
                 </div>
 
-                <div data-aos="flip-right" class="offre"
-                    style="background: url(./img/vehicules); background-repeat: no-repeat; background-size: cover;">
+                <div id="offre4" data-aos="flip-right" class="offre"
+                    style="background: url(./img/hospital.jpeg); background-repeat: no-repeat; background-size: cover;">
                     <div class="content">
                         <h2>Offre 4</h2>
-                        <h3>Taxi ou VSL Conventionné</h3>
+                        <h3>Hospitalisations à domicile</h3>
 
-                        <p>Transporte les usagers en position assise </p>
-                        <p> Fait l’objet d’un accompagnement administratif et médical </p>
-                        <p> Equipé pour faciliter l’accès en chaise roulante </p>
-                        <p>Détient le nécessaire en tout secourisme</p>
+                        <p>L’hospitalisation à domicile (HAD) est une forme
+                            d’hospitalisation à temps complet au cours de laquelle les
+                            soins sont effectués au domicile de la personne.</p>
 
+                        <p>Nous assurons à domicile la réalisation de ces soins
+                            médicaux et paramédicaux, parfois lourds et continus,
+                            nécessitantle plus souvent l'utilisation de matériel adapté.</p>
+
+                        <p>Le service d’Hospitalisation à domicile est très utile dans
+                            beaucoup de cas de figures. Nos équipes de médecins et
+                            de paramédicaux, en concertation avec vos médecins
+                            traitants, établissent ensemble un protocole de soins
+                            adapté et assurent le suivi de celui-ci.</p>
+
+                        <p>Le patient profite ainsi de soins dans le confort de sa
+                            maison et dans son environnement familial. Au delà de la
+                            prise en charge médicale, l’entourage est soulagé et se
+                            sent soutenu dans cette épreuve.</p>
+
+                        <a href="mailto:enzombira@gmail.com"
+                            title="Celui-ci dépendra de l’état de santé du patient et de la nature de la prise en charge à domicile.">Demander
+                            un devis</a>
                     </div>
                 </div>
 
-                <div data-aos="flip-right" class="offre"
-                    style="background: url(./img/bureau); background-repeat: no-repeat; background-size: cover;">
+                <div id="offre5" data-aos="flip-right" class="offre"
+                    style="background: url(./img/vehicules); background-repeat: no-repeat; background-size: cover;">
                     <div class="content">
                         <h2>Offre 5</h2>
-                        <h3>offre personnalisée</h3>
+                        <h3> Transport médicalisé de soins intensifs ou standards</h3>
 
-                        <p>Prise de RDV chez des medecins spécialistes
+                        <p>Une cellule médicalisée est composée de notre
+                            équipe de médecins et d’infirmiers qualifiés pour
+                            accompagner les patients d’urgences, soins intensifs
+                            et réanimation</p>
+
+                        <p>Avec un matériel de pointe adapté au transfert de
+                            patient présentant un risque vital</p>
+
+                        <p>Cette offre permet le transfert non urgent de
+                            personne nécessitant un brancard</p>
+
+                        <p>Toujours accompagné d’un infirmier, si possible d’un
+                            médecin</p>
+
+                        <p>Ceci permet donc d’avoir une surveillance
+                            permanente et ainsi assurer la sécurité du patient</p>
+
+                        <p>La présence de l’infirmier favorise un échange et le
+                            contrôle de l’état du patient</p>
+
+                        <p>Le véhicule possède aussi l’équipement nécessaire
+                            pour le trajet( oxygène, matelas à dépression,
+                            pneumatique, trousse de secours)</p>
+                    </div>
+                </div>
+
+                <div id="offre6" data-aos="flip-right" class="offre"
+                    style="background: url(./img/vehicules); background-repeat: no-repeat; background-size: cover;">
+                    <div class="content">
+                        <h2>Offre 6</h2>
+                        <h3> Véhicule Sanitaires Légers (VSL)</h3>
+                        <p>Transporte les usagers en position assise</p>
+                        <p>Fait l’objet d’un accompagnement
+                            administratif et médical</p>
+                        <p>Equipé pour faciliter l’accès en chaise
+                            roulante</p>
+                        <p>Détient tout le nécessaire en secourisme</p>
+                    </div>
+                </div>
+
+                <div id="offre7" data-aos="flip-right" class="offre"
+                    style="background: url(./img/bureau); background-repeat: no-repeat; background-size: cover;">
+                    <div class="content">
+                        <h2>Offre 7</h2>
+                        <h3>Evénementiel</h3>
+                        <p>Prise de RDV chez des médecins
+                            spécialistes</p>
+
                         <p>Suivi du dossier médical</p>
-                        <p>Les véhicules et le personnel peuvent être loués pour des évènements spéciaux</p>
+
+                        <p>Les véhicules et le personnel peuvent
+                            être loués pour des évènements
+                            spéciaux</p>
+
                         <p>Transport de poche de sang</p>
-                        <p>Des évacuations d’urgences programmés à l’intérieur du pays</p>
+
+                        <p>Des évacuations d’urgences ou
+                            programmés à l’intérieur du pays</p>
                     </div>
                 </div>
             </div>
 
+        </section>
+
+        <section>
+
+            <h1 id="equipe">L' Equipe <strong>Transmed</strong></h1>
+
+            <p style="text-align: center;">Notre équipe est constituée de:</p>
+
+            <div class="equipes">
+                <div class="user" data-aos="zoom-in-down">
+                    <i class="fas fa-user-shield"></i>
+                    <p>Réceptionniste call-center</p>
+                </div>
+
+                <div class="user doctor" data-aos="zoom-in-down">
+                    <i class="fas fa-hospital-user"></i>
+                    <p>Directeur des Affaires Médicales</p>
+                </div>
+
+                <div class="user doctor" data-aos="zoom-in-down">
+                    <i class="fas fa-hospital-user"></i>
+                    <p>Responsable des opérations médicales</p>
+                </div>
+                <div class="user doctor" data-aos="zoom-in-down">
+                    <i class="fas fa-hospital-user"></i>
+                    <p>Médecins d’intervention: AnesthésisteRéanimateur, Urgentiste, Généraliste, etc</p>
+                </div>
+                <div class="user doctor" data-aos="zoom-in-down">
+                    <i class="fas fa-hospital-user"></i>
+                    <p>Infirmiers d’intervention:Diplômé d’Etat</p>
+                </div>
+                <div class="user doctor" data-aos="zoom-in-down">
+                    <i class="fas fa-hospital-user"></i>
+                    <p>Ambulanciers</p>
+                </div>
+            </div>
+
+            <div class="named-user">
+                <div class="named" data-aos="fade-in">
+                    <h3>Professeur Adrien SIMA ZUE</h3>
+                    <p>Titulaire d’AnesthésieRéanimation </p>
+                </div>
+
+                <div class="named" data-aos="fade-in">
+                    <h3>Docteur Pascal Christian NZE OBIANG</h3>
+                    <p>Médecin anesthésiste réanimateur </p>
+                </div>
+            </div>
         </section>
 
         <section>
@@ -332,7 +490,8 @@
 
                     <h2>Suivez nous sur les réseaux sociaux</h2>
                     <div class="contact-socials">
-                        <a target="blank" href="https://web.facebook.com/TransmedGabon"><i class="fab fa-facebook-square"></i></a>
+                        <a target="blank" href="https://web.facebook.com/TransmedGabon"><i
+                                class="fab fa-facebook-square"></i></a>
                     </div>
                 </div>
             </div>
