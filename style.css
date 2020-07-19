@@ -206,6 +206,7 @@ video {
     justify-content: flex-end;
     box-shadow: 5px 2px 10px #cccccc;
     width: 90%;
+    margin-bottom: 32px;
 }
 
 .offres {
@@ -213,6 +214,8 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    overflow: hidden;
 }
 
 .content {
@@ -357,6 +360,10 @@ main {
 
     .offre .content {
         width: 100%;
+    }
+
+    .offre .kit {
+        grid-template-columns: auto auto;
     }
 }
 
