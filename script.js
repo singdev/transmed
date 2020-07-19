@@ -1,3 +1,5 @@
+AOS.init({ duration: 1000 });
+
 function toggleNavMenu() {
     document.querySelector('.nav-bar').classList.toggle('show-nav');
 }

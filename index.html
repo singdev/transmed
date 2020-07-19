@@ -6,10 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="logo.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+    <link rel="manifest" href="img/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="header.css">
     <title>Transmed | Ambulances & Urgences </title>
 </head>
@@ -58,12 +78,15 @@
             <img src="./img/bureau" alt="Bureaux de transmed Gabon" class="background-img">
 
             <div class="main-header-content">
-                <img src="./img/happy-doctor.jpeg" alt="Patients heureux" class="happy-doctor">
+                <img src="./img/happy-doctor.jpeg" alt="Patients heureux"
+                    class="happy-doctor animate__animated animate__zoomIn">
                 <div class="content-text">
-                    <h2>Bienvenue chez Transmed</h2>
+                    <h2 class="animate__animated animate__fadeInUp">Bienvenue chez Transmed</h2>
                     <span class="separator"></span>
-                    <h1>La qualité des soins dans le confort de chez soi</h1>
-                    <h3>Grâce à transmed vous avez accès aux <strong>consultations</strong> , <strong>soins
+                    <h1 class="animate__animated animate__bounce animate__backOutUp animate__fadeInDown">La qualité des
+                        soins dans le confort de chez soi</h1>
+                    <h3 class="animate__animated animate__fadeIn">Grâce à transmed vous avez accès aux
+                        <strong>consultations</strong> , <strong>soins
                             infirmiers</strong> et <strong>hospitalisations</strong> à domicile. Nous offrons égalements
                         des services d' Ambulance, Taxi ambulance et Evenementiel pour les structures sanitaire</h3>
 
@@ -78,11 +101,10 @@
     </header>
 
     <main>
-
         <section>
             <h1 id="presentation">Présentation de <strong>Transmed</strong></h1>
             <div class="presentation-content">
-                <ul>
+                <ul data-aos="fade-right">
                     <li><strong>TRANSMED</strong> est la première structure médicale d’urgence qui assure une
                         permanence de soins <em>24H/24</em> et <em>7J/7</em> à travers principalement la visite
                         à domicile, ambulance, véhicule sanitaires légers (VSL) et taxi
@@ -92,10 +114,10 @@
                     <li>La création de TRANSMED est inspirée par un accident vasculaire
                         cérébral de son fondateur en 2016.</li>
                 </ul>
-                <img src="./img/bureau" alt="Bureau de transmed">
+                <img data-aos="fade-left" src="./img/bureau" alt="Bureau de transmed">
             </div>
 
-            <video width="90%" height="400" controls>
+            <video data-aos="fade-up" width="90%" height="400" controls>
                 <source src="./videos/presentation.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -105,7 +127,7 @@
             <h1 id="qualite">Politique <strong>qualité</strong></h1>
 
             <div class="qualite-container">
-                <div class="vision-ctn">
+                <div data-aos="fade-up" class="vision-ctn">
                     <h2>Notre Vison</h2>
                     <span class="separator"></span>
                     <p>Etre un système médical pre-hospitalier de pointe au niveau national et international</p>
@@ -114,7 +136,7 @@
                     <p>Assurer la prise en charge optimal des patients</p>
                 </div>
 
-                <div class="qualite-ctn">
+                <div data-aos="fade-up" class="qualite-ctn">
                     <h2>Nos Valeurs</h2>
                     <span class="separator"></span>
                     <div class="qualite-item">
@@ -128,7 +150,7 @@
                     </div>
                 </div>
 
-                <div class="qualite-ctn">
+                <div data-aos="fade-up" class="qualite-ctn">
                     <h2>Nos axes de priorité</h2>
                     <span class="separator"></span>
 
@@ -150,33 +172,33 @@
 
             <div class="prestation-ctn">
 
-                <div class="prestation">
+                <div data-aos="zoom-in-up" class="prestation">
                     <i class="fas fa-home"></i>
                     <p>Visite médicale à domicile</p>
                 </div>
 
-                <div class="prestation">
+                <div data-aos="zoom-in-up" class="prestation">
                     <i class="fas fa-procedures"></i>
                     <p>Transport d’urgence pré-hospitalière</p>
                 </div>
 
-                <div class="prestation">
+                <div data-aos="zoom-in-up" class="prestation">
                     <i class="far fa-hospital"></i>
                     <p>Transfert inter-hospitalier</p>
                 </div>
 
-                <div class="prestation">
+                <div data-aos="zoom-in-up" class="prestation">
                     <i class="fas fa-stethoscope"></i>
                     <p>Rapatriement sanitaire</p>
                 </div>
 
-                <div class="prestation">
+                <div data-aos="zoom-in-up" class="prestation">
                     <i class="fas fa-ambulance"></i>
                     <p>Transport pour soins ponctuels, discontinus ou continus (chimiothérapie, radiothérapie, dialyse,
                         kinésithérapie)</p>
                 </div>
 
-                <div class="prestation">
+                <div data-aos="zoom-in-up" class="prestation">
                     <i class="fas fa-calendar-week"></i>
                     <p>Evènementiel</p>
                 </div>
@@ -185,7 +207,7 @@
             <h1><strong>Nos Offres</strong></h1>
 
             <div class="offres">
-                <div class="offre"
+                <div data-aos="flip-right" class="offre"
                     style="background: url(./img/happy-doctor.jpeg); background-repeat: no-repeat; background-size: cover;">
                     <div class="content">
                         <h2>Offre 1</h2>
@@ -237,7 +259,7 @@
                     </div>
                 </div>
 
-                <div class="offre"
+                <div data-aos="flip-right" class="offre"
                     style="background: url(./img/vehicules); background-repeat: no-repeat; background-size: cover;">
                     <div class="content">
                         <h2>Offre 2</h2>
@@ -249,7 +271,7 @@
                     </div>
                 </div>
 
-                <div class="offre"
+                <div data-aos="flip-right" class="offre"
                     style="background: url(./img/vehicules); background-repeat: no-repeat; background-size: cover;">
                     <div class="content">
                         <h2>Offre 3</h2>
@@ -264,7 +286,7 @@
                     </div>
                 </div>
 
-                <div class="offre"
+                <div data-aos="flip-right" class="offre"
                     style="background: url(./img/vehicules); background-repeat: no-repeat; background-size: cover;">
                     <div class="content">
                         <h2>Offre 4</h2>
@@ -278,7 +300,7 @@
                     </div>
                 </div>
 
-                <div class="offre"
+                <div data-aos="flip-right" class="offre"
                     style="background: url(./img/bureau); background-repeat: no-repeat; background-size: cover;">
                     <div class="content">
                         <h2>Offre 5</h2>
@@ -319,12 +341,15 @@
 
                     <h2>Suivez nous sur les réseaux sociaux</h2>
                     <div class="contact-socials">
-                        <a href="#"><i class="fab fa-facebook-square"></i></a> 
-                        <a href="#"><i class="fab fa-twitter-square"></i></a> 
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
                     </div>
                 </div>
             </div>
         </section>
+        <div style="text-align: center; padding: 40px;">
+            <img src="./img/pub_ouverture.jpeg" alt="Heure d'ouverture" class="pub">
+        </div>
     </main>
 
     <footer>
