@@ -168,7 +168,17 @@ nav {
     }
 
     .contact-bar .adresse-transmed, .contact-bar .contact-transmed {
-        display: none;
+        width: 45%;
+        font-size: 10px;
+        padding-top: 16px;
+    }
+
+    .contact-bar {
+        flex-wrap: wrap;
+    }
+
+    .logo-transmed {
+        width: 100%;
     }
 
     .main-header-content  img {
