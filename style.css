@@ -18,6 +18,7 @@ html {
     border-radius: 20px;
     background-color: #e9120e;
     font-weight: bold;
+    display: inline-block;
 }
 
 .light-round-button {
