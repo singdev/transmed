@@ -300,6 +300,10 @@ footer {
     height: auto;
 }
 
+main {
+    padding: 20px;
+}
+
 @media screen and (max-width: 880px) {
     .qualite-container {
         display: flex;
